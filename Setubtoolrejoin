@@ -1,31 +1,11 @@
-#!/bin/bash
-cd
-
-# Dọn storage cũ
-if [ -e "/data/data/com.termux/files/home/storage" ]; then
-    rm -rf /data/data/com.termux/files/home/storage
-fi
 termux-setup-storage
-
 yes | pkg update
 . <(curl https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/termux-change-repo.sh)
 yes | pkg upgrade
-
-# ── GỠ TOÀN BỘ PYTHON ──────────────────────────────────────────
-pkg uninstall python python3.10 python3.11 python3.12 python-pip python-psutil -y 2>/dev/null
-pkg autoremove -y
-rm -rf ~/.local/lib/python3*/
-rm -rf ~/.cache/pip/
-# ────────────────────────────────────────────────────────────────
-
-# Cài tur-repo TRƯỚC rồi mới cài python3.12
-pkg install tur-repo -y
-pkg install python3.12 -y
-yes | pkg install python-pip -y
-
-export CFLAGS="-Wno-error=implicit-function-declaration"
-
+yes | pkg i python
+yes | pkg i python-pip
 pip install requests rich prettytable pytz pycryptodome
+export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
 
 curl -Ls "https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/zamtoolrejoinver8.py" \
