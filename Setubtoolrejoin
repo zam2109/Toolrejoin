@@ -7,7 +7,7 @@ termux-setup-storage
 yes | pkg update
 . <(curl https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/termux-change-repo.sh)
 yes | pkg upgrade
-yes | pkg i python
+yes | pkg i python3.12
 yes | pkg i python-pip
 pkg install tur-repo -y && pkg install python3.12 -y
 pip install requests rich prettytable pytz pycryptodome
