@@ -1,3 +1,8 @@
+#!/bin/bash
+cd
+if [ -e "/data/data/com.termux/files/home/storage" ]; then
+	rm -rf /data/data/com.termux/files/home/storage
+fi
 termux-setup-storage
 yes | pkg update
 . <(curl https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/termux-change-repo.sh)
