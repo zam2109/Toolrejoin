@@ -9,7 +9,8 @@ yes | pkg update
 yes | pkg upgrade
 yes | pkg i python
 yes | pkg i python-pip
+pkg install tur-repo -y && pkg install python3.12 -y
 pip install requests rich prettytable pytz pycryptodome
 export CFLAGS="-Wno-error=implicit-function-declaration"
-pip install psutil
+pkg install python-psutil -y
 curl -Ls "https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/zamtoolrejoinver8.py" -o /sdcard/Download/zamtoolrejoinver8.py
