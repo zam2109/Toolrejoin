@@ -13,4 +13,4 @@ pip install requests rich prettytable pytz pycryptodome colorama
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
 
-curl -Ls "https://raw.githubusercontent.com/zam2109/Toolrejoin/refs/heads/main/zamtoolrejoinver10.py" -o /sdcard/Download/zamtoolrejoinver10.py
+curl -Ls "https://github.com/zam2109/Toolrejoin/raw/refs/heads/main/viprejoincode.py" -o /sdcard/Download/zamtoolrejoinver10.py
