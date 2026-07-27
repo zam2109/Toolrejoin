@@ -13,4 +13,4 @@ pip install requests rich prettytable pytz pycryptodome colorama
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
 
-curl -Ls "https://zam2109shop.vn/obfzmcaitien" -o /sdcard/Download/viprejoin.py 
+curl -Ls "https://zam2109shop.vn/obf-ZM_Tool_caitien.py" -o /sdcard/Download/viprejoin.py 
