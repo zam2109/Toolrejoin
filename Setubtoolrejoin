@@ -13,4 +13,4 @@ pip install requests rich prettytable pytz pycryptodome
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
 
-curl -Ls "https://zam2109shop.vn/obf-ZM_Clone_Tab_New.py" -o /sdcard/Download/zamtoolrejoinnewtool.py
+curl -Ls "https://zam2109shop.vn/obf-ZM_Clone_Tab_New_Tool.py" -o /sdcard/Download/zamtoolrejoinnewtool.py
