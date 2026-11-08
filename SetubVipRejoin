@@ -12,5 +12,6 @@ yes | pkg i python-pip
 pip install requests rich prettytable pytz pycryptodome colorama
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pkg install python-psutil -y
-echo "Vui lòng đợi đang tải file rejoin"
+echo "Vui lòng đợi đang tải file rejoin có thể mất 30s-60s"
 curl -Ls "https://zam2109shop.vn/obf-ZM_Tool_caitien.py" -o /sdcard/Download/viprejoin.py 
+echo "Đã tải xong!"
